@@ -11,7 +11,7 @@ function main() {
 	$(function () {
 		$(window).scroll(function () {
             // set distance user needs to scroll before fadeIn on navbar
-			if ($(this).scrollTop() > 15) {
+			if ($(this).scrollTop() > 150) {
         $(".navbar").removeClass("navbar-custom-faded");
 			} else {
 				$(".navbar").addClass("navbar-custom-faded");
@@ -20,6 +20,10 @@ function main() {
 
 	
 	});
+	
+	$('.carousel').carousel({
+  interval: 0
+  })
 	
 	// Preloader */
 	  	$(window).load(function() {
@@ -30,7 +34,7 @@ function main() {
 
   $(document).ready(function(){
     // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    $(".sc").on('click', function(event) {
   
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
@@ -64,7 +68,7 @@ function main() {
     });
 
     $('body').scrollspy({
-        target: '.navbar-default',
+        target: '#navbar',
         offset: 80
     })
 }());
