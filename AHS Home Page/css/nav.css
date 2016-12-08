@@ -1,0 +1,102 @@
+/* Navigation */
+.navbar-custom {
+    padding: 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,0.9);
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+.navbar-custom-faded {
+    padding: 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0));
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+.navbar-custom .navbar-brand {
+    color: #eee;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.navbar-custom-faded .navbar-brand {
+  color: #fff;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+/* Navbar Toggle Button */
+.navbar-custom .navbar-toggle {
+    color: #eee;
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 0 4px;
+}
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
+    background-color: rgba(80,80,80,.4);
+    color: #fff;
+}
+.navbar-custom-faded .navbar-toggle:hover, .navbar-custom-faded .navbar-toggle:focus {
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+}
+/* Toggle Button End */
+
+.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+.navbar-custom a {
+    color: #fff;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    transition: color .6s;
+}
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #f05b22;
+    background-color: transparent;
+    transition: color .6s;
+}
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+    color: #f05b22;
+    transition: color .6s;
+}
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+.navbar-custom-faded .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    color: #fff;
+    transition: color .6s;
+}
+.navbar-custom-faded .nav li a:hover {
+    outline: 0;
+    color: #f05b22;
+    background-color: transparent;
+    transition: color .6s;
+}
+.navbar-custom-faded .nav li a:focus, .navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+    color: white;
+    transition: color .6s;
+}
+.navbar-custom .nav li.active a {
+    background-color: rgba(240,91,34,.9);
+    color: black;
+    border-bottom: solid 5px rgba(199,66,0,0.9);
+}
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
