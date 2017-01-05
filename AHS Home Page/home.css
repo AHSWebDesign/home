@@ -220,8 +220,6 @@ ul, ol {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url("assets/athletics/parallaxAthletics.jpg") no-repeat center center fixed;
-    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -253,8 +251,6 @@ ul, ol {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url("assets/home/pressbox.jpg") no-repeat center center fixed;
-    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -347,6 +343,7 @@ ul, ol {
     padding: 20px;
     color: #fff;
 }
+
 .categories {
 	padding-bottom: 30px;
 }
@@ -425,9 +422,13 @@ ol.type li a:hover {
 	margin-bottom: 30px;
 	border-radius: 5px;
 }
+.staff-item img {
+  height: 230px;
+  width: 200px;
+}
 .staff-item .hover-bg {
-	max-height: 180px;
-  max-width: 360px;
+	height: 230px;
+  width: 200px;
 	overflow: hidden;
 	position: relative;
 	border-radius: 5px;
@@ -487,11 +488,10 @@ ol.type li a:hover {
 
 /* General Info CSS */
 #info {
-    padding: 40px 0;
     background: #111;
+    padding: 20px;
 }
 #info .text {
-    margin-left: 5px;
     color: #bbb;
 }
 #info H3 {
@@ -515,7 +515,6 @@ ol.type li a:hover {
     color: #e75926;
 }
 #info i.fa {
-    float: left;
     display: block;
     margin-right: 15px;
     color: #fff;
@@ -527,4 +526,62 @@ ol.type li a:hover {
 }
 #info p {
     margin-top: 20px;
+}
+#info .btn{
+    background: #111;
+    border-color: #111;
+    border-radius: 0px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.6s;
+}
+#info .btn:after {
+    font-family: "Glyphicons Halflings";
+	content: "\2212";
+    float: right;
+    margin-left: 15px;
+    transition: 0.6s;
+  }
+#info .btn:active {
+    outline: none;
+    border: none;
+}
+#info .btn.collapsed:after {
+    content: "\2b";
+    transition: 0.6s;
+    outline: none;
+    border: none;
+  }
+#info .container {
+	background: #111;
+	margin-top: 0px;
+}
+#info .collapse {
+    padding-top: 5px;
+    transition: 0.6s;
+}
+#info .info-column {
+	color:#ccc;
+	margin-top: 0px;
+	padding: 10px;
+    background: #111;
+    display: table-row-group;
+}
+#info .li {
+	padding:65px;
+}
+#info a{
+	color:#ccc;
+}
+#info a:hover{
+	color:#f05b22;
+}
+@media only screen and (min-width: 980px) {
+    #info .info-column {
+        float:left;
+    }
+    #info .info-content {
+        text-align: center;
+    }
 }
